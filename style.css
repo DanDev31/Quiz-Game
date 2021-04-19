@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Contenedor inicio del juego */
+
+.contenedor {
+    background-color: #002df3;
+    padding: 2rem;
+    width: 50%;
+    border-radius: 5px;
+}
+
+
+.contenedor-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-inicio h2{
+    font-size: 3rem;
+
+}
+
+@media (max-width:768px) {
+    .contenedor{
+        width: 90%;
+        padding: 1rem;
+    }
+    .contenedor-inicio h2{
+        font-size: 2.5rem;
+    }
+}
+
+/* Contenedor preguntas y respuestas */
+
+.preguntas-y-respuestas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pregunta{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.respuestas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    width: 90%;
+}
+
+.respuestas > *{
+    width: inherit;
+    padding: 5px 0;
+    cursor: pointer;
+    background-color: gold;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: .2s ease;
+}
+
+.respuestas > *:hover{
+    transform: scale(1.03);
+}
+
+@media (max-width:768px) {
+    .pregunta{
+        width: 100%;
+        text-align: center;
+    }
+    .respuestas{
+        width: 90%;
+        padding: 0;
+    }
+}
+
+.btn{
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.boton-inicio{
+    background-color: gold;
+    font-size: 1rem;
+    text-transform: uppercase;   
+}
+
+.btn:hover{
+    opacity: .9;
+}
+
+.resultado-juego{
+   font-size: 3rem; 
+   margin-bottom: 2rem;
+   font-weight: 800;
+   text-align: center;
+}
+
+
+/* Clases javascript */
+.correcto{
+    background-color: #11ce11;
+}
+.incorrecto{
+    background-color: red;
+}
+
+.oculto{
+    display: none;
+}
