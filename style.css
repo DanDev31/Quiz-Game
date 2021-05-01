@@ -21,10 +21,12 @@ body{
 }
 
 h1  {
+    text-align: center;
+    line-height: 1.2;
     font-family: 'Permanent Marker', cursive; 
     letter-spacing: 3px;
     font-size: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 
 h2 {
@@ -136,6 +138,7 @@ h2 {
     text-transform: uppercase;   
     box-shadow: #b39800 0px 10px 1px 0px;
     transition: .1s ease;
+    margin-bottom: 1rem;
 }
 
 .boton-inicio:hover{
